@@ -1,0 +1,547 @@
+/* =========================================================
+   CUSTOMER PAGES
+========================================================= */
+
+.customer-page {
+    padding: 34px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.customer-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+
+.customer-page-eyebrow {
+    display: block;
+    color: #6366f1;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.customer-page-header h1 {
+    font-size: 29px;
+    letter-spacing: -0.8px;
+    color: #172033;
+}
+
+.customer-page-header p {
+    margin-top: 7px;
+    color: #667085;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SUMMARY CARDS
+========================================================= */
+
+.customer-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.customer-summary-card {
+    background: white;
+    border: 1px solid #eaecf0;
+    border-radius: 15px;
+    padding: 21px;
+    box-shadow: 0 2px 5px rgba(16, 24, 40, 0.03);
+}
+
+.customer-summary-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-summary-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-summary-icon.blue {
+    background: #eef4ff;
+    color: #2563eb;
+}
+
+.customer-summary-icon.purple {
+    background: #f3e8ff;
+    color: #7c3aed;
+}
+
+.customer-summary-icon.green {
+    background: #ecfdf3;
+    color: #039855;
+}
+
+.customer-summary-icon.orange {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.customer-summary-card span {
+    display: block;
+}
+
+.customer-summary-title {
+    margin-top: 17px;
+    color: #667085;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.customer-summary-value {
+    margin-top: 6px;
+    font-size: 24px;
+    color: #172033;
+    font-weight: 800;
+}
+
+.customer-summary-subtitle {
+    margin-top: 5px;
+    color: #98a2b3;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CONTENT CARD
+========================================================= */
+
+.customer-content-card {
+    background: white;
+    border: 1px solid #eaecf0;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.customer-content-header {
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.customer-content-header h2 {
+    font-size: 16px;
+    color: #172033;
+}
+
+.customer-content-header p {
+    color: #98a2b3;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.customer-primary-btn {
+    border: 0;
+    color: white;
+    background: #4f46e5;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.customer-primary-btn:hover {
+    background: #4338ca;
+}
+
+.customer-secondary-btn {
+    border: 1px solid #d0d5dd;
+    color: #344054;
+    background: white;
+    padding: 9px 14px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.customer-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customer-table th {
+    background: #f9fafb;
+    color: #667085;
+    font-size: 10px;
+    text-align: left;
+    padding: 13px 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.customer-table td {
+    padding: 15px 20px;
+    border-top: 1px solid #f2f4f7;
+    color: #475467;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.customer-table td strong {
+    color: #172033;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.customer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+    padding: 5px 9px;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.customer-badge.success {
+    background: #ecfdf3;
+    color: #027a48;
+}
+
+.customer-badge.pending {
+    background: #fffaeb;
+    color: #b54708;
+}
+
+.customer-badge.failed {
+    background: #fef3f2;
+    color: #b42318;
+}
+
+.customer-badge.approved {
+    background: #ecfdf3;
+    color: #027a48;
+}
+
+.customer-badge.rejected {
+    background: #fef3f2;
+    color: #b42318;
+}
+
+.customer-badge.processing {
+    background: #eff8ff;
+    color: #175cd3;
+}
+
+
+/* =========================================================
+   PAYMENT CARDS
+========================================================= */
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+}
+
+.payment-form-card,
+.payment-info-card {
+    background: white;
+    border: 1px solid #eaecf0;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.payment-card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.payment-card-title-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #eef2ff;
+    color: #4f46e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-card-title h2 {
+    font-size: 17px;
+    color: #172033;
+}
+
+.payment-card-title span {
+    display: block;
+    color: #98a2b3;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.customer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.customer-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.customer-form-group label {
+    color: #344054;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.customer-form-group input,
+.customer-form-group select,
+.customer-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 11px 12px;
+    outline: none;
+    background: white;
+    color: #344054;
+    font-size: 12px;
+}
+
+.customer-form-group input:focus,
+.customer-form-group select:focus,
+.customer-form-group textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.08);
+}
+
+
+/* =========================================================
+   PAYMENT METHODS
+========================================================= */
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.payment-method {
+    border: 1px solid #eaecf0;
+    border-radius: 10px;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.payment-method:hover {
+    border-color: #6366f1;
+    background: #f8f7ff;
+}
+
+.payment-method strong {
+    display: block;
+    font-size: 11px;
+    color: #172033;
+}
+
+.payment-method span {
+    display: block;
+    color: #98a2b3;
+    font-size: 9px;
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   LOAN STATUS
+========================================================= */
+
+.loan-status-card {
+    background: white;
+    border: 1px solid #eaecf0;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.loan-status-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loan-status-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.loan-status-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #ecfdf3;
+    color: #039855;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loan-status-main strong {
+    display: block;
+    font-size: 14px;
+}
+
+.loan-status-main span {
+    display: block;
+    color: #98a2b3;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   EMPTY / LOADING
+========================================================= */
+
+.customer-empty-state {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #98a2b3;
+    font-size: 13px;
+    text-align: center;
+}
+
+.customer-empty-state strong {
+    color: #475467;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+
+.customer-info-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: #f8f7ff;
+    border: 1px solid #e0e7ff;
+    border-radius: 10px;
+    color: #4338ca;
+    margin-bottom: 20px;
+}
+
+.customer-info-box strong {
+    display: block;
+    font-size: 11px;
+}
+
+.customer-info-box span {
+    display: block;
+    color: #667085;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .customer-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .customer-page {
+        padding: 22px 16px;
+    }
+
+    .customer-page-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .customer-page-header h1 {
+        font-size: 24px;
+    }
+
+    .customer-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-content-header {
+        padding: 17px;
+    }
+
+    .customer-table th,
+    .customer-table td {
+        padding: 12px 14px;
+    }
+
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+}

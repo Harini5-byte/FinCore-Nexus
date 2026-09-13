@@ -1,0 +1,296 @@
+
+    /* =========================================================
+       TOP NAVBAR
+    ========================================================= */
+
+.top-navbar {
+    height: 72px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8ebf1;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 28px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 900;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-menu {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    color: #475569;
+
+    margin-right: 15px;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.navbar-search {
+    width: 390px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0 12px;
+
+    background: #f7f8fb;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 9px;
+
+    color: #9aa3b3;
+
+    box-sizing: border-box;
+}
+
+
+.navbar-search input {
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 12px;
+
+    color: #334155;
+}
+
+
+.navbar-search input::placeholder {
+    color: #a4adbd;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.navbar-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   ICON BUTTONS
+========================================================= */
+
+.navbar-icon-btn {
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #64748b;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+
+    padding: 0;
+}
+
+
+.navbar-icon-btn:hover {
+    background: #f5f6fa;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   NOTIFICATION DOT
+========================================================= */
+
+.badge-dot {
+    width: 6px;
+    height: 6px;
+
+    position: absolute;
+
+    right: 4px;
+    top: 4px;
+
+    border-radius: 50%;
+
+    background: #635bff;
+
+    border: 1px solid #ffffff;
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding-left: 18px;
+
+    border-left: 1px solid #e6e9ef;
+
+    min-height: 34px;
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.navbar-avatar {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eeedff;
+
+    color: #635bff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PROFILE TEXT
+========================================================= */
+
+.navbar-profile-info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    min-width: 65px;
+}
+
+
+.navbar-profile-info strong {
+    font-size: 12px;
+
+    color: #1e293b;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.navbar-profile-info span {
+    font-size: 9px;
+
+    color: #94a3b8;
+
+    margin-top: 3px;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .mobile-menu {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-search {
+        width: min(390px, 50vw);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .top-navbar {
+        padding: 0 15px;
+    }
+
+
+    .navbar-search {
+        width: auto;
+
+        flex: 1;
+    }
+
+
+    .navbar-profile-info {
+        display: none;
+    }
+
+
+    .navbar-profile {
+        border-left: none;
+
+        padding-left: 0;
+    }
+
+}

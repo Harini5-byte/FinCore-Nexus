@@ -1,0 +1,86 @@
+/* =========================================================
+   ADMIN BANKING LAYOUT
+========================================================= */
+
+.app-layout {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+
+    background: #f5f7fb;
+}
+
+
+/* =========================================================
+   MAIN AREA
+   Sidebar = 250px
+========================================================= */
+
+.main-area {
+    min-height: 100vh;
+
+    margin-left: 250px;
+
+    width: calc(100% - 250px);
+
+    display: flex;
+    flex-direction: column;
+
+    background: #f5f7fb;
+
+    box-sizing: border-box;
+
+    transition:
+            margin-left 0.25s ease,
+            width 0.25s ease;
+}
+
+
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.page-content {
+    flex: 1;
+
+    width: 100%;
+
+    padding: 24px;
+
+    box-sizing: border-box;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 901px) {
+
+    .main-area {
+        margin-left: 250px;
+
+        width: calc(100% - 250px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .main-area {
+        margin-left: 0;
+
+        width: 100%;
+    }
+
+    .page-content {
+        padding: 18px;
+    }
+}

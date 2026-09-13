@@ -1,0 +1,164 @@
+.kyc-mgmt-page {
+    padding: 4px 0;
+}
+
+.kyc-mgmt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.kyc-mgmt-eyebrow {
+    color: #6366f1;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin: 0 0 4px 0;
+}
+
+.kyc-mgmt-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 26px;
+    margin: 0;
+}
+
+.kyc-mgmt-subtitle {
+    color: #6b7280;
+    margin: 6px 0 0 0;
+}
+
+.kyc-mgmt-refresh {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    padding: 10px 16px;
+    border-radius: 9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.kyc-mgmt-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    max-width: 420px;
+}
+
+.kyc-mgmt-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.kyc-mgmt-error {
+    background: #fef2f2;
+    color: #b91c1c;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.kyc-mgmt-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.kyc-mgmt-table th {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6b7280;
+    background: #f9fafb;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.kyc-mgmt-table td {
+    padding: 12px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.kyc-mgmt-status {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kyc-mgmt-status-approved {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.kyc-mgmt-status-rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.kyc-mgmt-status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.kyc-mgmt-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.kyc-mgmt-actions button {
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+}
+
+.kyc-mgmt-approve {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.kyc-mgmt-reject {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.kyc-mgmt-audit {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.kyc-mgmt-remarks {
+    max-width: 220px;
+    font-size: 13px;
+}
+
+.kyc-remarks-good {
+    color: #065f46;
+}
+
+.kyc-remarks-bad {
+    color: #991b1b;
+}
+
+.kyc-remarks-none {
+    color: #9ca3af;
+    font-style: italic;
+}

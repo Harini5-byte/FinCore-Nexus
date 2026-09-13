@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: kyc-verification-service
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: ${KYC_VERIFICATION_MAX_FILE_SIZE:10MB}
+      max-request-size: ${KYC_VERIFICATION_MAX_REQUEST_SIZE:25MB}
+
+server:
+  port: ${KYC_VERIFICATION_SERVER_PORT:8090}
+
+logging:
+  level:
+    root: INFO
+    com.infosys.kycverification: INFO
+  # NEVER log request/response bodies for these packages - they may contain
+  # document images, selfies or extracted PII. See README "Security & Privacy".
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+
+kyc:
+  verification:
+
+    ocr:
+      tessdata-path: ${KYC_OCR_TESSDATA_PATH:C:/Program Files/Tesseract-OCR/tessdata}
+      language: ${KYC_OCR_LANGUAGE:eng}
+      max-file-size-bytes: ${KYC_OCR_MAX_FILE_SIZE_BYTES:10485760}
+      allowed-content-types: image/jpeg,image/png,image/bmp,image/tiff,application/pdf
+      min-extracted-text-length: ${KYC_OCR_MIN_TEXT_LENGTH:3}
+
+    face-match:
+      face-cascade-path: "classpath:models/haarcascade_frontalface_default.xml"
+      similarity-threshold: ${KYC_FACEMATCH_THRESHOLD:0.80}
+      max-file-size-bytes: ${KYC_FACEMATCH_MAX_FILE_SIZE_BYTES:10485760}
+      allowed-content-types: image/jpeg,image/png,image/bmp
+      normalized-face-size: 200
+      min-face-size-fraction: 0.10
+
+    liveness:
+      face-cascade-path: "classpath:models/haarcascade_frontalface_default.xml"
+      eye-cascade-path: "classpath:models/haarcascade_eye_tree_eyeglasses.xml"
+      min-frames: ${KYC_LIVENESS_MIN_FRAMES:5}
+      max-frames: ${KYC_LIVENESS_MAX_FRAMES:30}
+      max-file-size-bytes: ${KYC_LIVENESS_MAX_FILE_SIZE_BYTES:5242880}
+      allowed-content-types:
+        - image/jpeg
+        - image/png
+      confidence-threshold: ${KYC_LIVENESS_THRESHOLD:0.60}
+      min-sharpness-variance: ${KYC_LIVENESS_MIN_SHARPNESS:15.0}
